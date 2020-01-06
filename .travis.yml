@@ -106,6 +106,12 @@ matrix:
         - TESTMODE=fast
         - COVERAGE=
         - NUMPYSPEC="--upgrade numpy"
+    - arch: arm64
+      python: 3.7
+      os: linux
+      env:
+        - TESTMODE=full
+        
 cache:
   directories:
     - $HOME/.ccache
